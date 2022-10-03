@@ -1,0 +1,39 @@
+
+body {
+    color: black;
+    background-color: white;
+  
+}
+
+h1{
+    color:#FC03E8;
+    font-family: 'papyrus';
+    background-color: black;
+}
+
+p{
+    font-family: 'bradley hand';
+    color: #72A180;
+    background-color: black;
+}
+
+h2{
+    color: #24B7B5;
+    font-family: 'luminari';
+}
+
+h3{
+    font-family: 'courier';
+    color: #120b6a;
+}
+
+table {
+    font-family: 'Baskerville';
+    background-color: black;
+}
+table th{ 
+    color: #8169C3;
+}
+table td{
+    color: #d6e40e;
+}
