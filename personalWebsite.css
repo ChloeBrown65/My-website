@@ -4,29 +4,37 @@ body {
     background-color: white;
   
 }
-
+.title {
+    display: flex;
+    justify-content: center;
+}
 h1{
     color:#FC03E8;
     font-family: 'papyrus';
     background-color: black;
+    border-radius: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .partA{
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    gap: 10px;
+    
 }
 
-.image{
-    display: flex;
-    
-    
- }
+img { 
+    border-radius: 5%;
+}
 
 .introduction{
     font-family: 'bradley hand';
     color: #72A180;
     background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5%;
     
     
 }
@@ -44,12 +52,24 @@ h3{
 table {
     font-family: 'Baskerville';
     background-color: black;
+    border: 5px red;
 }
 table th{ 
     color: #8169C3;
+    text-align: center;
+    padding: 15px;
 }
 table td{
     color: #d6e40e;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+
+}
+
+tr:hover {
+    background-color: #1605d1;
 }
 
 ul{
@@ -61,7 +81,24 @@ a:link{
     color: white;
     font-family: 'comic sans ms';
     background-color: #194F71;
+    text-decoration: none;
 }
 
+a:visited{
+    color: white;
+    font-family: 'comic sans ms';
+    background-color: #194F71;
+    text-decoration: none;
+}
 
+a:hover{
+    color: rgb(249, 8, 128);
+    font-family: 'comic sans ms';
+    background-color: black;
+    text-decoration: none;
+}
 
+.linkedin{
+    display: flex;
+    justify-content: center;
+}
