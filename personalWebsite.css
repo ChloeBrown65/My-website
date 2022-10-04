@@ -11,10 +11,27 @@ h1{
     background-color: black;
 }
 
-p{
+section {
+    display: flex;
+    align-items: flex-start;
+    width: 1000px;
+}
+
+.image{
+    display: flex;
+    order: 1;
+    
+ }
+
+.introduction{
     font-family: 'bradley hand';
     color: #72A180;
     background-color: black;
+    display: flex;
+    order: 2;
+    padding: 20px;
+    
+    
 }
 
 h2{
@@ -37,3 +54,17 @@ table th{
 table td{
     color: #d6e40e;
 }
+
+ul{
+    color: #f20000df;
+    font-family: 'andale mono';
+}
+
+a:link{
+    color: white;
+    font-family: 'comic sans ms';
+    background-color: #194F71;
+}
+
+
+
