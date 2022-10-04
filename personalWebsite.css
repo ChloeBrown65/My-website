@@ -11,15 +11,15 @@ h1{
     background-color: black;
 }
 
-section {
+.partA{
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     width: 1000px;
 }
 
 .image{
     display: flex;
-    order: 1;
+    
     
  }
 
@@ -27,9 +27,6 @@ section {
     font-family: 'bradley hand';
     color: #72A180;
     background-color: black;
-    display: flex;
-    order: 2;
-    padding: 20px;
     
     
 }
