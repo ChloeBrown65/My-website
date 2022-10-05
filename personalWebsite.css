@@ -17,6 +17,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 30px 100px;
+    
+    
 }
 
 nav ul li {
@@ -24,12 +26,15 @@ nav ul li {
     display: inline-block;
     padding: 10px 20px;
     
+    
 }
 
 nav ul li a{
-    color: black;
+    color: rgb(233, 11, 11);
     position: relative;
     padding: 5px 0;
+    border-radius: 15%;
+    
 }
 
 .title {
@@ -101,7 +106,7 @@ tr:hover {
 }
 
 ul{
-    color: #f20000df;
+    color: #ff0000;
     font-family: 'andale mono';
 }
 
@@ -126,7 +131,7 @@ a:hover{
     font-family: 'comic sans ms';
     background-color: black;
     text-decoration: none;
-    transition: 2s;
+    transition: 1s;
 }
     
 
