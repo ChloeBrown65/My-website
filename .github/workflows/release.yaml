@@ -1,24 +1,23 @@
-# release.yaml
 name: Example Release
 
 on:
   push:
     tags:
       - 'release/v*'
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:      
-      contents: read      
-      packages: write    
-      
-    steps:      
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
       - name: Remove unused build gunk from runner
         run: |
           sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /opt/ghc 
-          sudo rm -rf "$AGENT_TOOLSDIRECTORY" 
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Docker Buildx
@@ -42,7 +41,7 @@ jobs:
           context: ./
           platforms: linux/amd64
           file: .github/actions/Dockerfile
-          push: true          
-          tags: | 
+          push: true
+          tags: |
             ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:latest
             ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:${{ env.RELEASE_VERSION }}
